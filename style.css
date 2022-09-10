@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Montserrat:wght@300;400;700&display=swap');
+html {
+  font-size: 16px;
+}
+body {
+  background: #fff;
+  color: #333;
+  font-family: 'Lora', serif;
+  margin: 0;
+}
+h1, h2, p {
+  margin: 0 0 0.8em;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 0;
+}
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+h2 {
+  font-size: 2rem;
+  font-weight: normal;
+  color: #666;
+}
+p + h2 {
+  margin-top: 1.2em;
+}
+.banner {
+  background: linear-gradient(0deg, rgb(159 50 0 / 30%), rgb(44 96 139 / 30%)), url(images/pexels-johannes-plenio-1133495.jpg);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+  align-content: center;
+  justify-content: center;
+}
+.banner > * {
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+.banner .container p {
+  font-size: 30px;
+  font-style: italic;
+  margin: 0;
+}
+.container {
+  box-sizing: border-box;
+  margin: 50px auto;
+  width: 700px;
+}
+.container p {
+  font-size: 1.2rem;
+  line-height: 1.35em;
+}
+.link-medium {
+  background-image: linear-gradient(to bottom, rgba(3, 75, 163, 0.2), rgba(157, 43, 5, 0.2));
+  color: #333;
+  font-size: 25px;
+  font-style: italic;
+  text-decoration: none;
+}
+.link-medium:hover {
+  background-image: linear-gradient(to bottom, rgba(3, 75, 163, 0.9), rgba(157, 43, 5, 0.9));
+  color: #fff;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: 500px;
+  }
+  .container p {
+    font-size: 1rem;
+  }
+  .banner {
+    height: 400px;
+  }
+  .banner .container p {
+    font-size: 20px;
+  }
+  .link-medium {
+    font-size: 18px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 540px) {
+  html {
+    font-size: 15px;
+  }
+  .container {
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .banner {
+    height: auto;
+    min-height: 350px;
+  }
+}
